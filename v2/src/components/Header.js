@@ -5,13 +5,13 @@ import {
     Route,
     Link
 } from "react-router-dom";
-
+import { auth } from '../firebase/utils'
 import './Header.scss'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 
-const Header = () => {
+const Header = ({ currentUser }) => {
     return (
         <>
             <header className="container">
