@@ -10,8 +10,10 @@ import './Header.scss'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { connect } from "react-redux";
+import CardIcon from '../components/CardIcon';
+import CardDropdown from './CardDropdown'
 
-const Header = ({ currentUser }) => {
+const Header = ({ currentUser, hidden }) => {
     return (
         <>
             <header className="container">
@@ -38,8 +40,9 @@ const Header = ({ currentUser }) => {
                                         SIGN IN
                                     </Link>
                                 )}
-
+                                <CardIcon />
                             </div>
+                            {hidden ? null : <CardDropdown />}
                         </nav>
                     </div>
                     <div className="top right">
@@ -75,7 +78,8 @@ const links = [
 
 ];
 
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+    currentUser,
+    hidden
 })
 export default connect(mapStateToProps)(Header);
