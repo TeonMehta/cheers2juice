@@ -4,7 +4,7 @@ import Shop from './pages/Shop'
 import Contact from './pages/Contact'
 import About from "./pages/About";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import ShopProduct from "./pages/ShopProduct";
 import Authentication from "./pages/Authentication";
 import { auth, createUserProfileDocument } from './firebase/utils'
@@ -49,7 +49,7 @@ class App extends Component {
           <Route exact path='/shop/:productId' component={ShopProduct} />
           <Route exact path='/about' component={About} />
           <Route exact path='/contact' component={Contact} />
-          <Route exact path='/signin' component={Authentication} />
+          <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<Authentication />)} />
         </Switch>
 
       </div>
@@ -57,8 +57,13 @@ class App extends Component {
   }
 
 }
+
+const mapStateTopProps = ({ user }) => ({
+  currentUser: user.currentUser
+})
+
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateTopProps, mapDispatchToProps)(App);
