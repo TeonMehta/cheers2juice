@@ -6,6 +6,7 @@ import About from "./pages/About";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route, Redirect } from "react-router-dom";
 import ShopProduct from "./pages/ShopProduct";
+import Product from './components/product'
 import Authentication from "./pages/Authentication";
 import { auth, createUserProfileDocument } from './firebase/utils'
 import React, { Component } from 'react';
@@ -28,7 +29,6 @@ class App extends Component {
             ...snapShot.data()
           });
         });
-        console.log(this.state);
       }
       setCurrentUser(userAuth);
     });
