@@ -9,7 +9,7 @@ import { auth } from '../firebase/utils'
 import './Header.scss'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-
+import { connect } from "react-redux";
 
 const Header = ({ currentUser }) => {
     return (
@@ -29,6 +29,15 @@ const Header = ({ currentUser }) => {
                                 <Link className='navlink' to='/shop'>SHOP</Link>
                                 <Link className='navlink' to='/contact'>CONTACT</Link>
                                 <Link className='navlink' to='/follow'>FOLLOW</Link>
+                                {currentUser ? (
+                                    <div className='option' onClick={() => auth.signOut()}>
+                                        SIGN OUT
+                                    </div>
+                                ) : (
+                                    <Link className='option' to='/signin'>
+                                        SIGN IN
+                                    </Link>
+                                )}
 
                             </div>
                         </nav>
@@ -65,4 +74,8 @@ const links = [
     }
 
 ];
-export default Header;
+
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser
+})
+export default connect(mapStateToProps)(Header);
