@@ -5,13 +5,15 @@ import {
     Route,
     Link
 } from "react-router-dom";
-
+import { auth } from '../firebase/utils'
 import './Header.scss'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { connect } from "react-redux";
+import CardIcon from '../components/CardIcon';
+import CardDropdown from './CardDropdown'
 
-
-const Header = () => {
+const Header = ({ currentUser, hidden }) => {
     return (
         <>
             <header className="container">
@@ -29,14 +31,22 @@ const Header = () => {
                                 <Link className='navlink' to='/shop'>SHOP</Link>
                                 <Link className='navlink' to='/contact'>CONTACT</Link>
                                 <Link className='navlink' to='/follow'>FOLLOW</Link>
+                                {currentUser ? (
+                                    <div className='option' onClick={() => auth.signOut()}>
+                                        SIGN OUT
+                                    </div>
+                                ) : (
+                                    <Link className='option' to='/signin'>
+                                        SIGN IN
+                                    </Link>
+                                )}
 
                             </div>
+                            {hidden ? null : <CardDropdown />}
                         </nav>
                     </div>
                     <div className="top right">
-                        <a className="cart">
-                            {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
-                        </a>
+                        <CardIcon />
                     </div>
                 </div>
             </header>
@@ -65,4 +75,9 @@ const links = [
     }
 
 ];
-export default Header;
+
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+    currentUser,
+    hidden
+})
+export default connect(mapStateToProps)(Header);
