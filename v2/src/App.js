@@ -1,6 +1,8 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Shop from './pages/Shop'
+import Checkout from './pages/Checkout'
 import Contact from './pages/Contact'
 import About from "./pages/About";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -48,10 +50,11 @@ class App extends Component {
           <Route exact path='/shop' component={Shop} />
           <Route exact path='/shop/:productId' component={ShopProduct} />
           <Route exact path='/about' component={About} />
+          <Route exact path='/checkout' component={Checkout} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<Authentication />)} />
         </Switch>
-
+        <Footer />
       </div>
     );
   }

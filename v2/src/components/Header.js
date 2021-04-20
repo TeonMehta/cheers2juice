@@ -40,15 +40,13 @@ const Header = ({ currentUser, hidden }) => {
                                         SIGN IN
                                     </Link>
                                 )}
-                                <CardIcon />
+
                             </div>
                             {hidden ? null : <CardDropdown />}
                         </nav>
                     </div>
                     <div className="top right">
-                        <a className="cart">
-                            {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
-                        </a>
+                        <CardIcon />
                     </div>
                 </div>
             </header>

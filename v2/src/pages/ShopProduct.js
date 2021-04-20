@@ -32,7 +32,7 @@ const ShopProduct = ({ item, addItem }) => {
 const mapDispatchToProps = dispatch => ({
     addItem: item => dispatch(addItem(item))
 })
-export default connect(null, mapDispatchToProps)(withRouter(ShopProduct));
+export default withRouter(connect(null, mapDispatchToProps)(ShopProduct));
 
 // const ShopProduct = (props, { item, addItem }) => {
 //     const name = props.match.params.productId;
