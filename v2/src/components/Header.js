@@ -7,11 +7,12 @@ import {
 } from "react-router-dom";
 import { auth } from '../firebase/utils'
 import './Header.scss'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { connect } from "react-redux";
 import CardIcon from '../components/CardIcon';
 import CardDropdown from './CardDropdown'
+import { createStructuredSelector } from 'reselect';
+import { selectCartHidden } from '../redux/cart/cart.selector'
+import { selectCurrentUser } from '../redux/user/user.selector';
 
 const Header = ({ currentUser, hidden }) => {
     return (
@@ -76,8 +77,8 @@ const links = [
 
 ];
 
-const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
-    currentUser,
-    hidden
-})
+const mapStateToProps = createStructuredSelector({
+    currentUser: selectCurrentUser,
+    hidden: selectCartHidden
+});
 export default connect(mapStateToProps)(Header);
