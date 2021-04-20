@@ -7,6 +7,7 @@ import { withRouter } from 'react-router-dom'
 
 const twoDecimals = (number) => parseFloat(number).toFixed(2)
 const ShopProduct = ({ item, addItem }) => {
+    console.log(item)
     const { title, imageUrl, price, description, linkUrl, history, match } = item;
     return (
         <Container className='product-item'>
@@ -14,13 +15,13 @@ const ShopProduct = ({ item, addItem }) => {
                 <Col xs={12} md={6}>
                     <Image
                         fluid
-                        src={imageUrl} alt="" onClick={() => history.push(`${match.url}/${linkUrl}`)} />
+                        src={imageUrl} alt="" />
                 </Col>
                 <Col xs={6} md={4}>
                     <h3>{title}</h3>
-                    <p>${twoDecimals(price)}</p>
-                    <p>{description}</p>
-                    <button onClick={() => addItem(item)}>Add to cart</button>
+                    {/* <p>${twoDecimals(price)}</p>
+                    <p>{description}</p> */}
+                    {/* <button onClick={() => addItem(item)}>Add to cart</button> */}
                 </Col>
             </Row>
         </Container>

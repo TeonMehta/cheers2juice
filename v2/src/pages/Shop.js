@@ -5,7 +5,8 @@ import products from '../menu'
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ShopProduct from "./ShopProduct";
-
+import { connect } from 'react-redux';
+import { selectCollections } from '../redux/shop/shop.selectors'
 
 class Shop extends Component {
     constructor() {
@@ -23,13 +24,13 @@ class Shop extends Component {
                 <Row className="justify-content-md-center">
                     {products.map((item) => (
                         <Col s={12} md={4} key={item.id} className=' product'>
-                            {/* <Link to={`/shop/${item.linkUrl}`}> */}
-                            <ShopProduct
-                                key={item.id}
-                                linkUrl={item.linkUrl}
-                                item={item}
-                            />
-                            {/* </Link> */}
+                            <Link to={`/shop/${item.linkUrl}`}>
+                                <ShopProduct
+                                    key={item.id}
+                                    linkUrl={item.linkUrl}
+                                    item={item}
+                                />
+                            </Link>
                         </Col>
                     ))}
                 </Row>

@@ -8,6 +8,7 @@ import About from "./pages/About";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route, Redirect } from "react-router-dom";
 import ShopProduct from "./pages/ShopProduct";
+import SpecificProduct from "./pages/SpecificProduct";
 import Product from './components/product'
 import Authentication from "./pages/Authentication";
 import { auth, createUserProfileDocument } from './firebase/utils'
@@ -50,7 +51,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/shop' component={Shop} />
-          <Route exact path='/shop/:productId' component={ShopProduct} />
+          <Route exact path='/shop/:productId' component={SpecificProduct} />
           <Route exact path='/about' component={About} />
           <Route exact path='/checkout' component={Checkout} />
           <Route exact path='/contact' component={Contact} />
