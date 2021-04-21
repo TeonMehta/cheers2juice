@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import './Shop.scss'
-import Product from '../components/product';
 import products from '../menu'
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ShopProduct from "./ShopProduct";
-import { connect } from 'react-redux';
-import { selectCollections } from '../redux/shop/shop.selectors'
 
 class Shop extends Component {
     constructor() {
@@ -17,8 +14,6 @@ class Shop extends Component {
         }
     }
     render() {
-        // const { products } = this.state;
-        console.log('PRODUCTS', this.state)
         return (
             <Container fluid className='container'>
                 <Row className="justify-content-md-center">
@@ -29,6 +24,7 @@ class Shop extends Component {
                                     key={item.id}
                                     linkUrl={item.linkUrl}
                                     item={item}
+                                    className=''
                                 />
                             </Link>
                         </Col>

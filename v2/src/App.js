@@ -7,9 +7,7 @@ import Contact from './pages/Contact'
 import About from "./pages/About";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route, Redirect } from "react-router-dom";
-import ShopProduct from "./pages/ShopProduct";
 import SpecificProduct from "./pages/SpecificProduct";
-import Product from './components/product'
 import Authentication from "./pages/Authentication";
 import { auth, createUserProfileDocument } from './firebase/utils'
 import React, { Component } from 'react';

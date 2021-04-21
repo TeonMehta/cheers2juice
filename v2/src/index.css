@@ -60,7 +60,7 @@ footer {
   margin: 0 auto;
 }
 
-h2 {
+h2, h3, button {
   text-transform: uppercase;
   font-family: Din;
 
@@ -110,10 +110,12 @@ button {
   width: auto;
   height: auto;
   padding: 1em 2.5em;
+  font-size: 0.7em!important;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase !important;
   background-color: transparent;
+  font-family: Proxima-Semi!important;
   color: #222;
   font-weight: 600;
   border-radius: 3px !important;
@@ -182,4 +184,9 @@ button:hover {
 
 .button-wrapper {
   text-align: center;
+}
+
+
+a:hover {
+  text-decoration: none!important;
 }

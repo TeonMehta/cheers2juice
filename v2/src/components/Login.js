@@ -31,32 +31,39 @@ class Login extends Component {
 
     render() {
         return (
-            <Col xs={12} md={6}>
+            <Col xs={12} md={8}>
                 <div>
                     <h2>Login</h2>
                     <Form onSubmit={this.handleSubmit}>
-                        <Form.Control
-                            className='input'
-                            value={this.state.email}
-                            onChange={this.onChange}
-                            name="email"
-                            type="email"
-                            placeholder="Email address..."
-                        />
-                        <Form.Control
-                            className='input'
-                            value={this.state.password}
-                            onChange={this.onChange}
-                            name="password"
-                            type="password"
-                            placeholder="Password..."
-                        />
-                        <button className='button' type="submit">Log In</button>
+                        <FormGroup controlId="validationCustomEmail">
+                            <FormLabel>Email Address *</FormLabel>
+                            <Form.Control
+                                className='input'
+                                value={this.state.email}
+                                onChange={this.onChange}
+                                name="email"
+                                type="email"
+                                placeholder="Email address..."
+                            />
+                        </FormGroup>
+                        <FormGroup controlId="validationCustomPassword">
+                            <FormLabel>Password *</FormLabel>
+                            <Form.Control
+                                className='input'
+                                value={this.state.password}
+                                onChange={this.onChange}
+                                name="password"
+                                type="password"
+                                placeholder="Password..."
+                            />
+                        </FormGroup>
+                        <button style={{ margin: '10px' }} className='button' type="submit">Log In</button>
                         <button className='button' onClick={signInWithGoogle} type="submit">Sign In With Google</button>
+
                     </Form>
 
                 </div>
-            </Col>
+            </Col >
         );
     }
 }

@@ -51,7 +51,7 @@ class Register extends Component {
     render() {
         const { displayName, email, password, confirmPassword } = this.state;
         return (
-            <Col xs={12} md={6}>
+            <Col xs={12} md={8}>
                 <div className='sign-up'>
                     <h2 className='title'>I do not have a account</h2>
                     <span>Sign up with your email and password</span>

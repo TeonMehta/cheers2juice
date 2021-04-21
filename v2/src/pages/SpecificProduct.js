@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import './Checkout.scss'
+import './SpecificProduct.scss'
 import { Col, Container, Image, Row } from "react-bootstrap";
 import {
     addItem,
@@ -20,9 +20,10 @@ const SpecificProduct = ({ collections, match, addItem }) => {
                         fluid
                         src={result.imageUrl} alt="" />
                 </Col>
-                <Col xs={6} md={4}>
-                    <h3>{result.title}</h3>
+                <Col xs={12} md={4}>
+                    <h3 className='juice-title'>{result.title}</h3>
                     <p>${twoDecimals(result.price)}</p>
+                    <p>{result.ingredients}</p>
                     <p>{result.description}</p>
                     <button onClick={() => addItem(result)}>Add to cart</button>
                 </Col>

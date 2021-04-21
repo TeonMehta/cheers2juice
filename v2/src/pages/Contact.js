@@ -83,9 +83,9 @@ const Contact = (props) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head> */}
             <div className="spacer"> &nbsp;</div>
-            <Row>
+            <Row className="justify-content-md-center">
                 <Col className='left'></Col>
-                <Col xs={12} md={6}>
+                <Col xs={10} md={8}>
                     <div className="form-container">
                         <h2>CONTACT</h2>
                         <p>Get in touch with us.</p>
@@ -171,8 +171,8 @@ const Contact = (props) => {
                     </div>
                 </Col>
                 <Col className='right'></Col>
-            </Row>
-        </div>
+            </Row >
+        </div >
     );
 };
 

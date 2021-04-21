@@ -5,8 +5,8 @@ const PRODUCT_DATA = [
         id: 1,
         linkUrl: 'chiller',
         price: 8.50,
-        indgredients: '',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'Body Booster',
@@ -14,8 +14,8 @@ const PRODUCT_DATA = [
         id: 2,
         linkUrl: 'body-booster',
         price: 8.50,
-        indgredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'Eclipse',
@@ -23,8 +23,8 @@ const PRODUCT_DATA = [
         id: 3,
         linkUrl: 'eclipse',
         price: 8.50,
-        indgredients: '',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'The Khemsitry',
@@ -32,8 +32,8 @@ const PRODUCT_DATA = [
         id: 4,
         linkUrl: 'khemistry',
         price: 9.50,
-        indgredients: '',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'Lemon Twist',
@@ -41,8 +41,8 @@ const PRODUCT_DATA = [
         id: 5,
         linkUrl: 'lemon-twist',
         price: 8.50,
-        indgredients: '',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'Red Zone',
@@ -50,8 +50,8 @@ const PRODUCT_DATA = [
         id: 6,
         linkUrl: 'red-zone',
         price: 8.50,
-        indgredients: '',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'Refresher',
@@ -59,8 +59,8 @@ const PRODUCT_DATA = [
         id: 7,
         linkUrl: 'refresher',
         price: 8.50,
-        indgredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'Sweet Tooth',
@@ -68,8 +68,8 @@ const PRODUCT_DATA = [
         id: 8,
         linkUrl: 'sweet-tooth',
         price: 9.00,
-        indgredients: '',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'Take Control',
@@ -77,8 +77,8 @@ const PRODUCT_DATA = [
         id: 9,
         linkUrl: 'take-control',
         price: 9.00,
-        indgredients: '',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     },
     {
         title: 'Tropical Bliss',
@@ -86,8 +86,8 @@ const PRODUCT_DATA = [
         id: 10,
         linkUrl: 'tropical-bliss',
         price: 9.00,
-        indgredients: '',
-        description: ''
+        ingredients: 'Red Apple, Lemon, Ginger and Cayenne Pepper',
+        description: 'The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus.'
     }
 ]
 

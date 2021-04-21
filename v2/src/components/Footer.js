@@ -25,7 +25,7 @@ const Footer = () => {
                     <Link href="#"><a className='link'>FAQ</a></Link>
                     <Link href="#"><a className='link'>Blog</a></Link>
                 </div>
-                <div className={styles.copyright}>©2021 CHEERS 2 JUICE</div>
+                <div className='copyright'>©2021 CHEERS 2 JUICE</div>
                 <div className="footer-newsletter"></div>
             </div>
         </footer>

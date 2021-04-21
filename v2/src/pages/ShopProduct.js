@@ -5,40 +5,20 @@ import { connect } from 'react-redux';
 import { addItem } from '../redux/cart/cart.actions'
 import { withRouter } from 'react-router-dom'
 
-const twoDecimals = (number) => parseFloat(number).toFixed(2)
 const ShopProduct = ({ item, addItem }) => {
     console.log(item)
     const { title, imageUrl, price, description, linkUrl, history, match } = item;
     return (
         <Container className='product-item'>
-            <Row>
-                <Col xs={12} md={6}>
-                    <Image
-                        fluid
-                        src={imageUrl} alt="" />
-                </Col>
-                <Col xs={6} md={4}>
-                    <h3>{title}</h3>
-                    {/* <p>${twoDecimals(price)}</p>
-                    <p>{description}</p> */}
-                    {/* <button onClick={() => addItem(item)}>Add to cart</button> */}
-                </Col>
-            </Row>
+            <Image
+                fluid
+                src={imageUrl} alt=""
+            />
         </Container>
     );
 };
 
-
-//export default withRouter(ShopProduct);
 const mapDispatchToProps = dispatch => ({
     addItem: item => dispatch(addItem(item))
 })
 export default withRouter(connect(null, mapDispatchToProps)(ShopProduct));
-
-// const ShopProduct = (props, { item, addItem }) => {
-//     const name = props.match.params.productId;
-//     const juice = products.filter(product => product.linkUrl === name)[0];
-
-//     return (
-//     );
-// };
