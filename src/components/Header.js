@@ -13,7 +13,7 @@ import CardDropdown from './CardDropdown'
 import { createStructuredSelector } from 'reselect';
 import { selectCartHidden } from '../redux/cart/cart.selector'
 import { selectCurrentUser } from '../redux/user/user.selector';
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Image, Container, Row, Figure } from "react-bootstrap";
 
 
 const Header = ({ currentUser, hidden }) => {
@@ -24,7 +24,16 @@ const Header = ({ currentUser, hidden }) => {
                 <Row className="justify-content-md-center">
                     <nav>
                         <Link to="/">
-                            <div className="branding">CHEERS 2 JUICE</div>
+                            <div className="branding">
+                                <Figure>
+                                    <Figure.Image
+                                        width={171}
+                                        height={180}
+                                        alt="171x180"
+                                        src="https://i.ibb.co/mG3RTn7/400-Pngdpi-Logo.png"
+                                    />
+                                    </Figure>
+                                </div>
                         </Link>
                         <div className="nav-inner">
                             <Link className='navlink' to='/about'>ABOUT</Link>
