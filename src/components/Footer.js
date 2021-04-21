@@ -13,7 +13,7 @@ const Footer = () => {
         <footer>
             <div className='inner'>
                 <div className="footer-social">
-                    <div className='brand'>CHEERS 2 JUICE </div>
+                    <div className='branding'>CHEERS 2 JUICE </div>
                     <div className={styles.iconRow}>
                         <Link href={socials[0]}><a className={'email footer-icon ' + 'icon'}><FontAwesomeIcon icon={faEnvelope} /></a></Link>
                         <Link href={socials[0]}><a className={'instagram footer-icon ' + 'icon'}><FontAwesomeIcon icon={faInstagram} /></a></Link>
