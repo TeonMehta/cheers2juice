@@ -1,7 +1,7 @@
 const PRODUCT_DATA = [
     {
         title: 'The Chiller',
-        imageUrl: 'https://i.ibb.co/Lz2g2sH/chiller.jpg',
+        imageUrl: 'https://i.ibb.co/hD5N2Zj/chiller-min.jpg',
         id: 1,
         linkUrl: 'chiller',
         price: 8.50,
@@ -10,7 +10,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'Body Booster',
-        imageUrl: 'https://i.ibb.co/1Z3ctNt/body-booster.jpg',
+        imageUrl: 'https://i.ibb.co/16zzQvv/body-booster-min.jpg',
         id: 2,
         linkUrl: 'body-booster',
         price: 8.50,
@@ -19,7 +19,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'Eclipse',
-        imageUrl: 'https://i.ibb.co/x2Cd9tv/eclipse.jpg',
+        imageUrl: 'https://i.ibb.co/0c5916G/eclipse-min.jpg',
         id: 3,
         linkUrl: 'eclipse',
         price: 8.50,
@@ -28,7 +28,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'The Khemsitry',
-        imageUrl: 'https://i.ibb.co/V3xTRTc/khemistry.jpg',
+        imageUrl: 'https://i.ibb.co/PZYHwGF/khemistry-min.jpg',
         id: 4,
         linkUrl: 'khemistry',
         price: 9.50,
@@ -37,7 +37,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'Lemon Twist',
-        imageUrl: 'https://i.ibb.co/c2nmDzs/lemon-twist.jpg',
+        imageUrl: 'https://i.ibb.co/b5LCD5d/lemon-twist-min.jpg',
         id: 5,
         linkUrl: 'lemon-twist',
         price: 8.50,
@@ -46,7 +46,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'Red Zone',
-        imageUrl: 'https://i.ibb.co/PcFZqCH/RED-ZONE.jpg',
+        imageUrl: 'https://i.ibb.co/89wcd75/RED-ZONE-min.jpg',
         id: 6,
         linkUrl: 'red-zone',
         price: 8.50,
@@ -55,7 +55,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'Refresher',
-        imageUrl: 'https://i.ibb.co/zxJmGHZ/refresher.jpg',
+        imageUrl: 'https://i.ibb.co/th2DgMR/refresher-min.jpg',
         id: 7,
         linkUrl: 'refresher',
         price: 8.50,
@@ -64,7 +64,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'Sweet Tooth',
-        imageUrl: 'https://i.ibb.co/bKC7Fgj/sweet-tooth.jpg',
+        imageUrl: 'https://i.ibb.co/5LXhqW5/sweet-tooth-min.jpg',
         id: 8,
         linkUrl: 'sweet-tooth',
         price: 9.00,
@@ -73,7 +73,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'Take Control',
-        imageUrl: 'https://i.ibb.co/D76Fh6t/take-control.jpg',
+        imageUrl: 'https://i.ibb.co/TgW4pPQ/take-control-min.jpg',
         id: 9,
         linkUrl: 'take-control',
         price: 9.00,
@@ -82,7 +82,7 @@ const PRODUCT_DATA = [
     },
     {
         title: 'Tropical Bliss',
-        imageUrl: 'https://i.ibb.co/9TsYVCF/tropical.jpg',
+        imageUrl: 'https://i.ibb.co/cY5xYqy/tropical-min.jpg',
         id: 10,
         linkUrl: 'tropical-bliss',
         price: 9.00,
@@ -96,3 +96,4 @@ const PRODUCT_DATA = [
 
 
 export default PRODUCT_DATA;
+
